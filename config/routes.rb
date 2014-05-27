@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   root "pages#home"
   get "about" => "pages#about"
+  # ^Above here we have made a route for the new about page. 
+  # This is one of the steps required to make a new page.
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
