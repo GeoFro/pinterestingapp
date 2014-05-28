@@ -1,3 +1,10 @@
+<!--
+ Example linking code that was moved to app/views/layouts/application.html.erb/
+<%= link_to "Home", root_path %>
+<%= link_to "About", about_path %> 
+-->
+<!-- Ruby links to the Home and About pages. Note root_path and about_path (and all such paths need to be defined in config/route.rb/) -->
 <h1>Welcome to the PinterestingApp</h1>
-<p><a href="localhost:3000/">Sign up</a> for free!</p>
+<p> <%= link_to "Sign up", "#" %> for free!</p>
 <!-- Change hyperlink address to sign-up page, Im guessing we'll do that soon but whatevs thought I should get into the habit of writing comments with my code.--> 
+<!--Changed hyperlink code from html to embedded Ruby-->
