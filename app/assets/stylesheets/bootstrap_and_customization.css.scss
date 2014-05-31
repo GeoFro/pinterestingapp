@@ -1,1 +1,13 @@
-@import 'bootstrap';
+$body-bg:															#3498db;
+
+/* Instead of using the default colours from bootstrap, source them from flatuicolors.com or a similar website, pasting in the code as above. */
+/* Note that the personalization code here is above the import bootstrap code... */
+
+$navbar-default-bg:									 #2980b9; 
+$navbar-default-link-color:					 #ecf0f1;
+$jumbotron-bg:											 #ecf0f1;
+
+
+
+
+@import 'bootstrap';								
