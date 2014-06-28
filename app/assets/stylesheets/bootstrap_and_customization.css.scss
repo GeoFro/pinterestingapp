@@ -1,10 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
 $body-bg:															#3498db;
 
 /* Instead of using the default colours from bootstrap, source them from flatuicolors.com or a similar website, pasting in the code as above. */
 /* Note that the personalization code here is above the import bootstrap code... */
 
+$font-family-sans-serif: 						'Shadows into light', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+
 $navbar-default-bg:									 #2980b9; 
 $navbar-default-link-color:					 #ecf0f1;
+$navbar-height: 											55px;
+
 $jumbotron-bg:											 #ecf0f1;
 
+
+
+
 @import 'bootstrap';								
+
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+	}
+
+	.navbar .nav {
+		font-size: 2em;
+	}
