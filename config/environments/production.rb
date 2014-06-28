@@ -80,4 +80,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+# Required code for Devise
+# Note: URL is set as your actual host
+config.action_mailer.default_url_options = { :host => 'http://geofro-pinterestingapp.herokuapp.com/' }
+
+
 end
