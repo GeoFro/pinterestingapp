@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root "pages#home"
   get "about" => "pages#about" # Creates about_path 
   # ^Above here we have made a route for the new about page. 
