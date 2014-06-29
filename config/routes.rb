@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   get "about" => "pages#about" # Creates about_path 
   # ^Above here we have made a route for the new about page. 
   # This is one of the steps required to make a new page.
-  get "signup" => "pages#signup"
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

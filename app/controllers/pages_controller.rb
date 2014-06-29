@@ -5,8 +5,6 @@ class PagesController < ApplicationController
    def about
   end
 
-   def signup
-  end
 end
 =begin Ok so to make a new page there are three steps.
 One step occurs here and you'll need to have:
