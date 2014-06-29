@@ -19,6 +19,14 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %> </li>
          <li><%= link_to "About", about_path %> </li>
+
+      <% if user_signed_in? %>
+         <li><%= link_to "Log out", destroy_user_session_path, method: :delete %> </li>
+      <% else %>
+      <!--If you wanted to have a second option here (Something else showing when the user was logged out you could put it here. Otherwise you dont even really need the else to be present.) -->
+      <li><%= link_to "Log in", new_user_session_path %></li>
+      <% end %>
+
       </ul>
     </div><!-- /.navbar-collapse -->
   </div class="container">
