@@ -23,10 +23,24 @@ $jumbotron-bg:											 #ecf0f1;
 	text-align: center;
 }
 
+/* Code to change navbar brand that I dont need to use atm
+but I want to keep for later reference. Its pretty much just CSS code
+to overwrite the bootstrap code so its not that difficult I dont think. */
+
+/*
 .navbar-brand {
 	font-weight: bold;
-	}
+	} 
+	*/
 
-	.navbar .nav {
-		font-size: 2em;
-	}
+.navbar-brand {
+	font-size: 1.5em;
+}
+
+.navbar .nav {
+	font-size: 1.3em;
+}
+
+.navbar .nav {
+	font-family: Helvetica;
+}
