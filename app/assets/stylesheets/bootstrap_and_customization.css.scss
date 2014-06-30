@@ -5,7 +5,7 @@ $body-bg:															#3498db;
 /* Instead of using the default colours from bootstrap, source them from flatuicolors.com or a similar website, pasting in the code as above. */
 /* Note that the personalization code here is above the import bootstrap code... */
 
-$font-family-sans-serif: 						'Shadows into light', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+$font-family-sans-serif: 						'Helvetica', 'Shadows Into Light', 'Helvetica Neue', 'Arial', 'sans-serif';
 
 $navbar-default-bg:									 #2980b9; 
 $navbar-default-link-color:					 #ecf0f1;
@@ -13,6 +13,8 @@ $navbar-height: 											55px;
 
 $jumbotron-bg:											 #ecf0f1;
 
+$panel-heading-bg: 										#ecf0f1;
+$panel-bg:														#ecf0f1;
 
 
 
@@ -23,24 +25,29 @@ $jumbotron-bg:											 #ecf0f1;
 	text-align: center;
 }
 
-/* Code to change navbar brand that I dont need to use atm
-but I want to keep for later reference. Its pretty much just CSS code
-to overwrite the bootstrap code so its not that difficult I dont think. */
-
-/*
-.navbar-brand {
-	font-weight: bold;
-	} 
-	*/
+/* Its pretty much just CSS code to overwrite the
+ bootstrap code so its not that difficult I dont think. */
 
 .navbar-brand {
-	font-size: 1.5em;
+	font-size: 1.7em;
 }
 
 .navbar .nav {
 	font-size: 1.3em;
 }
 
-.navbar .nav {
-	font-family: Helvetica;
+.navbar-brand {
+	font-family: Shadows Into Light;
+}
+
+.jumbotron {
+	font-family: Shadows Into Light;
+}
+
+.panel-heading {
+	font-family: Shadows Into Light;
+}
+
+.panel-heading {
+	font-size: 1.7em
 }
