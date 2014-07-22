@@ -85,5 +85,15 @@ Rails.application.configure do
 # Note: URL is set as your actual host
 config.action_mailer.default_url_options = { :host => 'http://geofro-pinterestingapp.herokuapp.com/' }
 
+# Sets Paperclip to upload images to AmazonS3 rather than Heroku which
+# isn't designed for storing images.
+config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['AWS_BUCKET'],
+    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+  }
+}
 
 end
