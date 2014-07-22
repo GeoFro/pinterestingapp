@@ -2,7 +2,7 @@
 
 ## Open Source Development
 
-Visit app online: http://geofro-pinterestingapp.herokuapp.com/
+Visit app online: http://geofro-pinterestingapp2.herokuapp.com/
 
 
 This is demonstrating how powerful open source collaboration / Github is.
