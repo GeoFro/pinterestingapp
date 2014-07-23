@@ -17,14 +17,12 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path %> </li>
-
         <% if user_signed_in? %>
-          <li><%= link_to 'Add a Pin', new_pin_path %></li>
+          <li><%= link_to raw('<span class="glyphicon glyphicon-pushpin"></span> Add a Pin'), new_pin_path %></li>
         <% end %>
         <!-- Just wanted to have the links in this order thats why I've made a new little if the user is signed in block. -->
-
-         <li><%= link_to "About", about_path %> </li>
+          <li><%= link_to "Home", root_path %> </li>
+          <li><%= link_to "About", about_path %> </li>
 
       <% if user_signed_in? %>
         <li><%= link_to "Settings", edit_user_registration_path %></li>
