@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :pins
 
   devise_for :users
-  root "pages#home"
+  root "pins#index"
   get "about" => "pages#about" # Creates about_path 
   # ^Above here we have made a route for the new about page. 
   # This is one of the steps required to make a new page.
