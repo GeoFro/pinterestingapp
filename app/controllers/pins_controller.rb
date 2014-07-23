@@ -4,7 +4,9 @@ class PinsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
 
   def index
-    @pins = Pin.all
+    @pins = Pin.all.order("created_at DESC")
+    # , limit(20) -- THIS could slip on to the back of the above line 
+    # and limit the number of pins to be displayed on the page.
   end
 
   def show
