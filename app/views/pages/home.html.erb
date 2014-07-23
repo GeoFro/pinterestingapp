@@ -8,14 +8,15 @@
 	<h1>Welcome to the PinterestingApp</h1>
 
 <% if user_signed_in? %>
-# do something
+<%= link_to 'See Pins', pins_path, class: "btn btn-primary btn-lg" %>
+<%= link_to 'New Pin', new_pin_path, class: "btn btn-primary btn-lg" %>
 
 <% else %>
 
 	<!--Added after "#" some code for nice bootstrap buttons-->
 		<p> <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg"%>
 
-			<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg"%> for free!
+			<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %> for free!
 		</p>
 		<% end %>
 <!-- Change hyperlink address to sign-up page, Im guessing we'll do that soon but whatevs thought I should get into the habit of writing comments with my code.--> 
