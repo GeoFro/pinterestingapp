@@ -1,0 +1,16 @@
+.row
+  %div{class: "col-md-offset-5 col-md-8"}
+    %div{class: "panel panel-default"}
+      %div{class: "panel-heading center"}=image_tag @pin.image.url(:medium)
+      .panel-body
+      %p
+        %strong= @pin.user.name if @pin.user
+        %p =@pin.description
+
+      - if @pin.user == current_user
+        = link_to edit_pin_path(@pin) do
+        %span{class="glyphicon glyphicon-edit"} Edit
+      = link_to 'Back', pins_path, class: "btn btn-primary btn-sm"
+
+-# Use the inspect element option when viewing the page in the browser to better see the sizes of the offset and columns
+-# You noob. Spell center like this rather than like this (centre)

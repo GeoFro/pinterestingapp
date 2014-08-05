@@ -1,25 +1,28 @@
-# One Month Rails
+# README!!!!
 
-## Open Source Development
+## HAML
 
-Visit app online: http://geofro-pinterestingapp2.herokuapp.com/
+HAML is an alternative interpreter for view files.  So instead of using `home.html.erb`, you use `home.html.haml`.
 
+It's designed to be much much easier to read and write, and does away with a lot of the stress of dealing with 
 
-This is demonstrating how powerful open source collaboration / Github is.
+Google `HAML` and you'll find plenty of stuff, the official page is quite good.
 
-I forked your app (copied to make my own changes), cloned onto my computer to update it, commited back to Github, and now I'm submitting a change back to you.
+Also make sure to hit up `HAML sublime text 2 package` on Google and get a package installed so that it autohighlights the text in different colours like it does for Erb, if you have any problems let me know.
 
-You can review and integrate this with your main branch if you want, or not if you don't.
+I've changed a couple of .erb view files here to give you the idea, but simply:
 
-This is how open source stuff like Bitcoin is developed, with tons of people forking their own little copies and requesting to add one new upgrade at a time.  For something as big as Bitcoin there is also discussion around every change by lots of the most committed members. 
+<div class="abc"> can be replaced with .abc
+Any html tag eg. <div>, <h1>, <p> can be replaced with %div, %h1, %p etc.
+Closing tags are all no longer necessary, but INDENTATION MATTERS.  You have to be consistent (I use 2 spaces, bound to my 'tab' key by sublime in the bottom right, but whatever works for you).  2 or 4 spaces, or else 1 tab is pretty much standard I think.
+<%= is just replaced with =
+<% is replaced with -
+<%# and <!-- is replaced with -# 
+No need for closing tags!!
+For anything more complicated, you just do it like this:
+<div class="class1 class2 class3">
+%div{class: "class1 class2 class3"} or %div(class="class1 class2 class3")
 
-The whole meaning of Open Source though is that anyone can fork and resubmit to the main repository, and even though most people can't, won't and don't, for the programming master race members they sometimes will. 
+Check out the views I changed, and give it a go in your current project maybe (just install the haml-rails gem first).
 
-The whole Linux operating system was built in exactly this way too, which nowadays is the software running behind Android.
-
-## Markdown Resources
-
-Good resources I've found for learning / editing "Markdown", the language for Readme files:
-
-* [Markdown summary](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* [Live editing with in-browser preview](http://tmpvar.com/markdown.html)
+It's a tiny bit slower for maybe half an hour, but after even just that you get it really quickly and things start to flow smoothly.
